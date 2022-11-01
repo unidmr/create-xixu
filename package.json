@@ -1,0 +1,36 @@
+{
+  "name": "create-xixu",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": "Shihao Xu",
+  "bin": {
+    "create-xixu": "index.js",
+    "cva": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unidmr/create-xixu.git"
+  },
+  "homepage": "https://github.com/unidmr/create-xixu#readme",
+  "devDependencies": {
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.7",
+    "prompts": "^2.4.2"
+  }
+}
