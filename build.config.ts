@@ -1,7 +1,7 @@
 import path from 'node:path'
 import url from 'node:url'
 import { defineBuildConfig } from 'unbuild'
-import licensePlugin from '../../scripts/rollupLicensePlugin.mjs'
+import licensePlugin from 'license.mjs'
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
 
@@ -15,7 +15,6 @@ export default defineBuildConfig({
     }
   },
   alias: {
-    // we can always use non-transpiled code since we support 14.18.0+
     prompts: 'prompts/lib/index.js'
   },
   hooks: {
