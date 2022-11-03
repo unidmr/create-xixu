@@ -1,6 +1,6 @@
 {
   "name": "create-xixu",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "type": "module",
   "license": "MIT",
   "author": "Shihao Xu",
@@ -16,8 +16,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "unbuild --stub",
-    "build": "unbuild",
-    "prepublishOnly": "npm run build"
+    "build": "unbuild"
   },
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
