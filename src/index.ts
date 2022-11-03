@@ -5,7 +5,6 @@ import spawn from 'cross-spawn'
 import minimist from 'minimist'
 import prompts from 'prompts'
 import {
-  blue,
   green,
   red,
   reset,
@@ -44,11 +43,6 @@ const FRAMEWORKS: Framework[] = [
         name: 'vue',
         display: 'JavaScript',
         color: yellow
-      },
-      {
-        name: 'vue-ts',
-        display: 'TypeScript',
-        color: blue
       },
     ]
   }
